@@ -1,0 +1,5 @@
+FROM openjdk:11
+COPY target/learn-devops.jar  /usr/local/
+WORKDIR /usr/local/
+EXPOSE 8080
+ENTRYPOINT "java" "-jar" "learn-devops.jar"
